@@ -1,0 +1,82 @@
+/* ************ ADD YOUR CUSTOM STYLES ************ */
+
+/*******************/
+/*   SCATTER PLOT  */
+/*******************/
+
+/*body {
+  font: 10px sans-serif;
+}*/
+
+#scatter rect {
+  fill: transparent;
+  shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.1);
+  shape-rendering: crispEdges;
+}
+
+.axisLine {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke: rgba(0, 0, 0, 0.5);
+  stroke-width: 2px;
+}
+
+/* .dot {
+  fill-opacity: .6;
+} */
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.pagebreak {
+  page-break-before: always;
+} /* page-break-after works, as well */
+
+
+.label{
+    font-size: 1.25rem !important;
+    font-weight: 200 !important;
+}
+
+.legend text{
+    font-size: 1.25rem !important;
+    font-weight: 200 !important;
+}
+
+.nutrient_buttons button{
+    font-size: 1.25rem !important;
+    font-weight: 200 !important;
+    background-color: transparent;
+}

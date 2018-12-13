@@ -1,0 +1,55 @@
+.label {
+  font-weight: bold;
+}
+
+div#Category {
+/*     line-height: 20px;
+     width: 18px;
+     font-size: 14pt;
+     font-family: sans-serif;
+     margin-top: 150px;
+	 margin-right: 250px;
+     position:absolute;
+     top:0;
+     right:0;
+	 color: purple;*/
+}
+
+
+rect {
+       
+		shape-rendering: crispEdges;
+		stroke-linejoin: round
+  }
+	  
+.axis path,
+.axis line {
+  fill: none;
+  stroke: transparent; 
+  shape-rendering: crispEdges;
+}
+
+
+.d3-tip {
+    font-family: sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    color: #fff; 
+    z-index: 5070;
+		font-size: 14px;
+		line-height: 1;
+		border-radius: 4px;
+  } 
+
+ .axis, .mono {
+    font-size: 1.25rem !important;
+    font-weight: 200 !important;
+  }
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+

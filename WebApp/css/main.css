@@ -1,0 +1,147 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 180px;
+  height: 180px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  font-size: 1.25rem
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.color-background{
+    background-color: #F5F5F5;
+}
+
+.vis-margin{
+    margin: 25px 0px 35px 0px;
+    text-align: center;
+}
+
+.vis-header-margin{
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
+
+.mx-2{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/*css for cutout text*/
+.image-container2 {
+ /* background-size: cover;*/ 
+   position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 450px !important;
+    width: 100%;
+}
+
+.text2 {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+  font-size: 4vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 80%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+.select{
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+
+.py-5 {
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 25px !important;
+    padding-top: 25px !important;
+     text-align:justify;
+}
+
+.navbar {
+    min-height: 33px;
+    padding: 0px;
+}
+
+.btn_group_label{
+    font-size: 1.5rem !important;
+    font-weight: 200 !important;
+}
+
+.contamination_buttons  button{
+    font-size: 1.25rem !important;
+    font-weight: 200 !important;
+    background-color: transparent;
+}
+
+.productStats {
+    font-weight: 400 !important;
+  }
+
+.inlierStats {
+    color: blue;
+  }
+  
+ .outlierStats {
+    color: red;
+  }
+
+#categoryDropdownDiv{
+    color: black;
+}
+
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    color:black;
+    padding: 1px;
+}
+
+a:focus, a:hover {
+    color: red !important;
+}
